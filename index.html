@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kjøp LHL-lodd</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #005b96;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #005b96;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, select, button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #005b96;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003d66;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kjøp LHL-lodd</h1>
+        <p>Støtt en god sak og vinn flotte premier!</p>
+    </header>
+    <main>
+        <h2>Bestill lodd</h2>
+        <p>Fyll ut skjemaet nedenfor for å bestille LHL-lodd. Hvert lodd koster 50 kroner.</p>
+        <form action="#" method="post">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" placeholder="Skriv inn ditt navn" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" placeholder="Skriv inn din e-post" required>
+            
+            <label for="quantity">Antall lodd:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Skriv inn antall lodd" min="1" required>
+            
+            <button type="submit">Kjøp lodd</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 LHL. Alle rettigheter forbeholdt.</p>
+    </footer>
+</body>
+</html>
